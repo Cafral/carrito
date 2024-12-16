@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carro Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<h1>Carrito</h1>
+<ul>
+    <li><a href="/carro_compras/productos">Ver productos</a></li>
+    <li><a href="/carro_compras/login.html">Login</a></li>
+    <li><a href="/carro_compras/logout">Logout</a></li>
+    <li><a href="/carro_compras/ver-carro">Ver carro</a></li>
+</ul>
+
+<div class="footer">
+    Creado por German Del Rio - <%= new java.util.Date() %>
+</div>
+</body>
+</html>
