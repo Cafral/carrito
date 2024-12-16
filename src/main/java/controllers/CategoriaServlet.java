@@ -51,7 +51,7 @@ public class CategoriaServlet extends HttpServlet {
                 categoriaRepo = new CategoriaRepositoryJdbcImplement(conn);
                 Categoria categoria = new Categoria();
                 categoria.setNombre(nombreCategoria);
-                categoria.setEstado(1); // Categoría siempre se crea activa
+                categoria.setEstado(1);
                 categoriaRepo.guardar(categoria);
                 response.sendRedirect(request.getContextPath() + "/categorias");
             } catch (Exception e) {

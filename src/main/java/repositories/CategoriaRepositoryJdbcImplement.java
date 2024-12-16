@@ -43,7 +43,7 @@ public class CategoriaRepositoryJdbcImplement implements Repository<Categoria> {
     public void guardar(Categoria categoria) throws SQLException {
         String sql;
         if (categoria.getIdCategoria() == null) {
-            sql = "INSERT INTO categoria (nombre, estado) VALUES (?, 1)"; // Estado activo por defecto
+            sql = "INSERT INTO categoria (nombre, estado) VALUES (?, 1)";
         } else {
             sql = "UPDATE categoria SET nombre = ?, estado = ? WHERE idcategoria = ?";
         }

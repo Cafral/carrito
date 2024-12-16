@@ -58,7 +58,7 @@ public class ProductoFormControlador extends HttpServlet {
         }catch (NumberFormatException e){
             idCategoria=0L;
         }
-        //Voy a obtener el idProducto
+        //Obtenemos el idProducto
         Long idProducto;
         try {
             idProducto=Long.valueOf(req.getParameter("idProducto"));

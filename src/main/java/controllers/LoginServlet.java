@@ -32,7 +32,7 @@ public class LoginServlet extends HttpServlet {
         //Implementamos objeto de la sesion
         LoginService auth=new LoginServiceSessionImplement();
         //Creamos una variable optional donde guardamos
-        //el nombre del usuario obteniendolo del método
+        //el nombre del usuario obteniendolo del metodo
         //getUsername
         Optional<String> usernameOptional=auth.getUsername(req);
         //Si el username esta presente quiero que me muestre

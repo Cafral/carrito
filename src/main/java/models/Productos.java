@@ -5,7 +5,7 @@ public class Productos {
     private String nombre;
     private Categoria categoria;
     private double precio;
-    private int cantidad; // Nuevo atributo cantidad
+    private int cantidad;
 
     public Productos() {}
 

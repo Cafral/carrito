@@ -10,17 +10,17 @@ import java.util.List;
 * para cualquier tipo de dato*/
 public interface Repository <T>{
     /*
-    *El método listar retornaa una lista de objetos de tipo generico T
+    *El metodo listar retornaa una lista de objetos de tipo generico T
     *Se usa lara obtener todos los registros de una entidad desde la base de datos
     *  */
     List<T> listar() throws SQLException;
     /*
-    * El método para Id recibe identificador único y retorno un objeto de tipo T
+    * El metodo para Id recibe identificador único y retorno un objeto de tipo T
     * correspondiente a ese identificador
     * Se usa para buscar un registro específico por su id*/
     T porId(Long id) throws SQLException;
     /*Recibe un objeto de tipo T y lo guarda en la base de datos
-    este método puede ser utilizado para crear un registro dependiendo
+    este metodo puede ser utilizado para crear un registro dependiendo
     si el objeto ya existe en la base de datos
      */
     void guardar(T t) throws SQLException;
